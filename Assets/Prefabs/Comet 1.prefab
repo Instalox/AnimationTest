@@ -1,0 +1,378 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1657760590386218}
+  m_IsPrefabParent: 1
+--- !u!1 &1657760590386218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4490153549295630}
+  - component: {fileID: 114108074261267608}
+  - component: {fileID: 114640642057808642}
+  m_Layer: 0
+  m_Name: Comet 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1707380808182184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4661952507892148}
+  - component: {fileID: 114402355803272488}
+  m_Layer: 0
+  m_Name: ice particles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1795565629286254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4491453456929422}
+  - component: {fileID: 114637950639124736}
+  m_Layer: 0
+  m_Name: fog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1820829842368560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4285363794597780}
+  - component: {fileID: 212457666881231350}
+  m_Layer: 0
+  m_Name: New Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1972377087251242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4718931462572908}
+  - component: {fileID: 114229664401063674}
+  m_Layer: 0
+  m_Name: ice particles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4285363794597780
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1820829842368560}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4490153549295630}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4490153549295630
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1657760590386218}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4285363794597780}
+  - {fileID: 4718931462572908}
+  - {fileID: 4661952507892148}
+  - {fileID: 4491453456929422}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4491453456929422
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1795565629286254}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4490153549295630}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4661952507892148
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1707380808182184}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4490153549295630}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4718931462572908
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1972377087251242}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4490153549295630}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114108074261267608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1657760590386218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b9943bcb5bbcec4eb2cf2a3e122a5a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HorizontalSlider: {fileID: 0}
+  VerticalSliderMin: {fileID: 0}
+  VerticalSliderMax: {fileID: 0}
+  EmissionRateSlider: {fileID: 0}
+  ParticlesPerEmitSlider: {fileID: 0}
+  ParticleLifeMinSlider: {fileID: 0}
+  ParticleLifeMaxSlider: {fileID: 0}
+  EmissionRateText: {fileID: 0}
+  ParticlesPerEmitText: {fileID: 0}
+  ParticleLifeMinText: {fileID: 0}
+  ParticleLifeMaxText: {fileID: 0}
+  HorVelTex: {fileID: 0}
+  VertMinText: {fileID: 0}
+  VertMaxText: {fileID: 0}
+  UseParticleEditor: 0
+  ParticlePrefab: {fileID: 1589855151796516, guid: 2828edb5ac539ac4681e1f0833b57bf5,
+    type: 2}
+  EmissionRate: 0
+  Gravity: {x: 0, y: 0}
+  HorizontalSpawnVelocity: {x: -1, y: 1}
+  VerticalSpawnVelocity: {x: -1, y: 1}
+  IsEmitting: 1
+  OverrideParticleScale: 0
+  ParticleLifeMin: 0.3
+  ParticleLifeMax: 1
+  StartScaleMin: 1
+  StartScaleMax: 2.8
+  ParticlesPerEmit: 10
+  PoolAmount: 500
+--- !u!114 &114229664401063674
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1972377087251242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b9943bcb5bbcec4eb2cf2a3e122a5a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HorizontalSlider: {fileID: 0}
+  VerticalSliderMin: {fileID: 0}
+  VerticalSliderMax: {fileID: 0}
+  EmissionRateSlider: {fileID: 0}
+  ParticlesPerEmitSlider: {fileID: 0}
+  ParticleLifeMinSlider: {fileID: 0}
+  ParticleLifeMaxSlider: {fileID: 0}
+  EmissionRateText: {fileID: 0}
+  ParticlesPerEmitText: {fileID: 0}
+  ParticleLifeMinText: {fileID: 0}
+  ParticleLifeMaxText: {fileID: 0}
+  HorVelTex: {fileID: 0}
+  VertMinText: {fileID: 0}
+  VertMaxText: {fileID: 0}
+  UseParticleEditor: 0
+  ParticlePrefab: {fileID: 1000766617994728, guid: 727be3909b06537458e017474791cdbb,
+    type: 2}
+  EmissionRate: 0.01
+  Gravity: {x: 0, y: 0}
+  HorizontalSpawnVelocity: {x: -1, y: 1}
+  VerticalSpawnVelocity: {x: -1, y: 1}
+  IsEmitting: 1
+  OverrideParticleScale: 0
+  ParticleLifeMin: 0.5
+  ParticleLifeMax: 1
+  StartScaleMin: 0
+  StartScaleMax: 0
+  ParticlesPerEmit: 5
+  PoolAmount: 100
+--- !u!114 &114402355803272488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1707380808182184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b9943bcb5bbcec4eb2cf2a3e122a5a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HorizontalSlider: {fileID: 0}
+  VerticalSliderMin: {fileID: 0}
+  VerticalSliderMax: {fileID: 0}
+  EmissionRateSlider: {fileID: 0}
+  ParticlesPerEmitSlider: {fileID: 0}
+  ParticleLifeMinSlider: {fileID: 0}
+  ParticleLifeMaxSlider: {fileID: 0}
+  EmissionRateText: {fileID: 0}
+  ParticlesPerEmitText: {fileID: 0}
+  ParticleLifeMinText: {fileID: 0}
+  ParticleLifeMaxText: {fileID: 0}
+  HorVelTex: {fileID: 0}
+  VertMinText: {fileID: 0}
+  VertMaxText: {fileID: 0}
+  UseParticleEditor: 0
+  ParticlePrefab: {fileID: 0}
+  EmissionRate: 0.3
+  Gravity: {x: 0, y: 0}
+  HorizontalSpawnVelocity: {x: -3, y: 3}
+  VerticalSpawnVelocity: {x: -3, y: 3}
+  IsEmitting: 1
+  OverrideParticleScale: 1
+  ParticleLifeMin: 5
+  ParticleLifeMax: 5
+  StartScaleMin: 0.1
+  StartScaleMax: 0.1
+  ParticlesPerEmit: 15
+  PoolAmount: 100
+--- !u!114 &114637950639124736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1795565629286254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b9943bcb5bbcec4eb2cf2a3e122a5a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HorizontalSlider: {fileID: 0}
+  VerticalSliderMin: {fileID: 0}
+  VerticalSliderMax: {fileID: 0}
+  EmissionRateSlider: {fileID: 0}
+  ParticlesPerEmitSlider: {fileID: 0}
+  ParticleLifeMinSlider: {fileID: 0}
+  ParticleLifeMaxSlider: {fileID: 0}
+  EmissionRateText: {fileID: 0}
+  ParticlesPerEmitText: {fileID: 0}
+  ParticleLifeMinText: {fileID: 0}
+  ParticleLifeMaxText: {fileID: 0}
+  HorVelTex: {fileID: 0}
+  VertMinText: {fileID: 0}
+  VertMaxText: {fileID: 0}
+  UseParticleEditor: 0
+  ParticlePrefab: {fileID: 0}
+  EmissionRate: 0
+  Gravity: {x: 0, y: 0}
+  HorizontalSpawnVelocity: {x: -3, y: 3}
+  VerticalSpawnVelocity: {x: -3, y: 3}
+  IsEmitting: 1
+  OverrideParticleScale: 1
+  ParticleLifeMin: 0.3
+  ParticleLifeMax: 1
+  StartScaleMin: 0
+  StartScaleMax: 5
+  ParticlesPerEmit: 1
+  PoolAmount: 100
+--- !u!114 &114640642057808642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1657760590386218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8766facf7cde304b9814637f09ba7fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FollowMouse: 0
+  LerpSpeed: 250
+--- !u!212 &212457666881231350
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1820829842368560}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.2, y: 0.2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
