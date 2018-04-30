@@ -31,6 +31,7 @@ public class Projectile : MonoBehaviour
 
             if (!HasExploded) {
                 var explosion = Instantiate(ExplosionPrefab, transform.position, transform.rotation);
+                Destroy(explosion.gameObject,3f);
                 HasExploded = true;
             }
         }
