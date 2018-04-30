@@ -8,3 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CoinFountain.unity
     guid: 153e6960b524b794db2fbcd92986469e
+  - enabled: 1
+    path: Assets/Scenes/ParticleComet.unity
+    guid: a3c8847c0450f624f9ad8dd818013efa
+  - enabled: 1
+    path: Assets/Scenes/SpriteAnimation.unity
+    guid: fc1514dea13c7294283de950ebde67d1

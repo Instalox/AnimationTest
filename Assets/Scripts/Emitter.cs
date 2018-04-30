@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ParticleEmitter : MonoBehaviour {
+public class Emitter : MonoBehaviour {
 
     #region UI Variables
 
@@ -33,9 +33,15 @@ public class ParticleEmitter : MonoBehaviour {
     public Vector2 HorizontalSpawnVelocity;
     public Vector2 VerticalSpawnVelocity;
     public bool IsEmitting;
+    public bool OverrideParticleLifeSpan;
+    public bool UseRandomLife;
+    public bool UseRandomScale;
     public bool OverrideParticleScale;
+    public bool UseRandomRotation;
+    public float RotationMin, RotationMax;
     public float ParticleLifeMin, ParticleLifeMax;
     public float StartScaleMin, StartScaleMax;
+    public float EndScaleMin, EndScaleMax;
     public int ParticlesPerEmit;
     public int PoolAmount = 250;
     private readonly List<ParticleComponent> ParticleList = new List<ParticleComponent>();
@@ -120,12 +126,30 @@ public class ParticleEmitter : MonoBehaviour {
                 particle.Init(transform.position ,
                     HorizontalSpawnVelocity ,
                     VerticalSpawnVelocity ,
-                    new Vector2(ParticleLifeMin , ParticleLifeMax));
+                    new Vector2(ParticleLifeMin , ParticleLifeMax), UseRandomLife);
+
                 particle.SetGravity(Gravity);
-                if ( OverrideParticleScale )
-                    particle.SetRandomStartScale(StartScaleMin , StartScaleMax);
-                //if ( particle.UseRandomStartScale )
-                //    particle.SetRandomStartScale(StartScaleMin , StartScaleMax);
+                if ( UseRandomRotation ) {
+                    var randomRot = Random.Range(RotationMin , RotationMax);
+                    particle.transform.Rotate(0 , 0 , randomRot);
+
+                }
+
+                if ( OverrideParticleScale ) {
+                    if ( UseRandomScale ) {
+                        particle.SetRandomStartScale(StartScaleMin , StartScaleMax);
+                        particle.SetRandomEndScale(EndScaleMin , EndScaleMax);
+
+                    }
+                    else {
+                        particle.SetStartEndScale(StartScaleMin,EndScaleMin);
+                    }
+                }
+
+                if (OverrideParticleLifeSpan) {
+                   // particle.Life = ParticleLifeMin;
+                    particle.MaxLife = ParticleLifeMax;
+                }
             }
         }
     }

@@ -9,44 +9,44 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1589855151796516}
+  m_RootGameObject: {fileID: 1000766617994728}
   m_IsPrefabParent: 1
---- !u!1 &1589855151796516
+--- !u!1 &1000766617994728
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4067546171505172}
-  - component: {fileID: 114393722623832528}
-  - component: {fileID: 212706890606470172}
+  - component: {fileID: 4225771021219800}
+  - component: {fileID: 114693712338760822}
+  - component: {fileID: 212472242944437878}
   m_Layer: 0
-  m_Name: CometParticle
+  m_Name: CometParticledust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4067546171505172
+--- !u!4 &4225771021219800
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1589855151796516}
+  m_GameObject: {fileID: 1000766617994728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114393722623832528
+--- !u!114 &114693712338760822
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1589855151796516}
+  m_GameObject: {fileID: 1000766617994728}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26a22b0fc6c75694bb1781a7c8451d3a, type: 3}
@@ -55,25 +55,29 @@ MonoBehaviour:
   Alive: 0
   ColorOverTime: 1
   ScaleOverTime: 1
-  StartColor: {r: 0.12191825, g: 0.21231352, b: 0.30147058, a: 0.159}
-  EndColor: {r: 0, g: 0, b: 0, a: 0}
-  UseRandomStartScale: 1
-  StartScaleMin: 1.8
-  StartScaleMax: 2.6
-  StartScale: {x: 1, y: 1}
+  StartColor: {r: 1, g: 1, b: 1, a: 1}
+  EndColor: {r: 0.2587046, g: 0.3243945, b: 0.6397059, a: 0.116}
+  UseRandomStartScale: 0
+  UseRandomEndScale: 0
+  RotateToVelocity: 0
+  StartScaleMin: 0.3
+  StartScaleMax: 0.3
+  EndScaleMin: 0
+  EndScaleMax: 0
+  StartScale: {x: 0.3, y: 0.3}
   EndScale: {x: 0, y: 0}
   Velocity: {x: 0, y: 0}
   Acceleration: {x: 0, y: 0}
   StartPosition: {x: 0, y: 0}
   Gravity: {x: 0, y: 0}
-  Life: 0.5
-  MaxLife: 3
---- !u!212 &212706890606470172
+  Life: 1
+  MaxLife: 1
+--- !u!212 &212472242944437878
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1589855151796516}
+  m_GameObject: {fileID: 1000766617994728}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -103,7 +107,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.038927343, g: 0.1525951, b: 0.2647059, a: 0.159}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

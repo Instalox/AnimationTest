@@ -1,36 +1,41 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Events;
 
-public class Projectile : MonoBehaviour {
-	public bool FollowMouse = false;
-	public Vector3 TargetPos { get; set; }
-	private float CurrentLerpTime;
-	public float LerpSpeed = 3f;
-	public Action OnArrived;
-	private Camera Cam { get; set; }
+public class Projectile : MonoBehaviour
+{
+    private float CurrentLerpTime;
 
-	void Awake() {
-		Cam = Camera.main;
-	}
+    public GameObject ExplosionPrefab;
 
-	void Update() {
-		if ( FollowMouse ) {
-			TargetPos = Cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x , Input.mousePosition.y , 0));
-		}
+    public bool FollowMouse = false;
+    private bool HasExploded;
+    public float LerpSpeed = 3f;
+    public UnityEvent OnArrived;
+    public Vector3 TargetPos { get; set; }
+    private Camera Cam { get; set; }
 
-		CurrentLerpTime += Time.deltaTime;
+    private void Awake() {
+        Cam = Camera.main;
+    }
 
-		var distToTarget = Vector3.Distance(transform.position , TargetPos);
-		if ( distToTarget <= .1f ) {
+    private void Update() {
+        if (FollowMouse)
+            TargetPos = Cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
 
-			if ( OnArrived != null )
-				OnArrived.Invoke();
-		}
+        CurrentLerpTime += Time.deltaTime;
 
-		var percent = CurrentLerpTime / LerpSpeed;
-		transform.position = Vector3.Lerp(transform.position , TargetPos , percent);
-	}
+        var distToTarget = Vector3.Distance(transform.position, TargetPos);
+        if (distToTarget <= .1f) {
+            if (OnArrived != null)
+                OnArrived.Invoke();
+
+            if (!HasExploded) {
+                var explosion = Instantiate(ExplosionPrefab, transform.position, transform.rotation);
+                HasExploded = true;
+            }
+        }
+
+        var percent = CurrentLerpTime / LerpSpeed;
+        transform.position = Vector3.Lerp(transform.position, TargetPos, percent);
+    }
 }
-

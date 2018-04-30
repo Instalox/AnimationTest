@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1367400113530318}
+  m_IsPrefabParent: 1
+--- !u!1 &1367400113530318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4556193511544912}
+  - component: {fileID: 114178610585693202}
+  m_Layer: 0
+  m_Name: Comet Explosion Emitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4556193511544912
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1367400113530318}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114178610585693202
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1367400113530318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b9943bcb5bbcec4eb2cf2a3e122a5a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HorizontalSlider: {fileID: 0}
+  VerticalSliderMin: {fileID: 0}
+  VerticalSliderMax: {fileID: 0}
+  EmissionRateSlider: {fileID: 0}
+  ParticlesPerEmitSlider: {fileID: 0}
+  ParticleLifeMinSlider: {fileID: 0}
+  ParticleLifeMaxSlider: {fileID: 0}
+  EmissionRateText: {fileID: 0}
+  ParticlesPerEmitText: {fileID: 0}
+  ParticleLifeMinText: {fileID: 0}
+  ParticleLifeMaxText: {fileID: 0}
+  HorVelTex: {fileID: 0}
+  VertMinText: {fileID: 0}
+  VertMaxText: {fileID: 0}
+  UseParticleEditor: 0
+  ParticlePrefab: {fileID: 1178432100615250, guid: abb665b4e0228a54e86630b4f1269fc6,
+    type: 2}
+  EmissionRate: 0
+  Gravity: {x: 0, y: 0}
+  HorizontalSpawnVelocity: {x: -30, y: 30}
+  VerticalSpawnVelocity: {x: -30, y: 30}
+  IsEmitting: 1
+  OverrideParticleLifeSpan: 0
+  UseRandomLife: 0
+  UseRandomScale: 0
+  OverrideParticleScale: 1
+  UseRandomRotation: 1
+  RotationMin: -15
+  RotationMax: 15
+  ParticleLifeMin: 3
+  ParticleLifeMax: 3
+  StartScaleMin: 5
+  StartScaleMax: 5
+  EndScaleMin: 5
+  EndScaleMax: 5
+  ParticlesPerEmit: 100
+  PoolAmount: 500
